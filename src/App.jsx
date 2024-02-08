@@ -1,6 +1,30 @@
 import { useState } from 'react'
-import ProductList from './features/product/ProductList'
-// import './App.css'
+import Home from './pages/Home'
+import Login from './features/auth/components/LoginPage'
+import Signup from './features/auth/components/SignupPage'
+import {
+  createBrowserRouter,
+  RouterProvider,
+  Route,
+  Link,
+} from 'react-router-dom'
+import LoginPage from './features/auth/components/LoginPage'
+import SignupPage from './features/auth/components/SignupPage'
+
+const router = createBrowserRouter([
+  {
+    path: '/',
+    element: <Home />,
+  },
+  {
+    path: '/login',
+    element: <LoginPage />,
+  },
+  {
+    path: '/signup',
+    element: <SignupPage />,
+  },
+])
 
 function App() {
   const [count, setCount] = useState(0)
@@ -8,7 +32,7 @@ function App() {
   return (
     <>
       <div>
-        <ProductList/>
+        <RouterProvider router={router} />
       </div>
     </>
   )
