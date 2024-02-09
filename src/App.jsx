@@ -11,6 +11,7 @@ import {
 import LoginPage from './features/auth/components/LoginPage'
 import SignupPage from './features/auth/components/SignupPage'
 import CartPage from './pages/CartPage'
+import Checkout from './pages/Checkout'
 
 const router = createBrowserRouter([
   {
@@ -28,6 +29,10 @@ const router = createBrowserRouter([
   {
     path: '/cart',
     element: <CartPage />,
+  },
+  {
+    path: '/checkout',
+    element: <Checkout />,
   },
 ])
 
