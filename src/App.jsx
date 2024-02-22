@@ -1,13 +1,8 @@
 import { useState } from 'react'
 import Home from './pages/Home'
-import Login from './features/auth/components/LoginPage'
-import Signup from './features/auth/components/SignupPage'
-import {
-  createBrowserRouter,
-  RouterProvider,
-  Route,
-  Link,
-} from 'react-router-dom'
+// import Login from './features/auth/components/LoginPage'
+// import Signup from './features/auth/components/SignupPage'
+import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 import LoginPage from './features/auth/components/LoginPage'
 import SignupPage from './features/auth/components/SignupPage'
 import CartPage from './pages/CartPage'
